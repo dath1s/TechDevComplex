@@ -3,7 +3,7 @@
 #include "sstream"
 
 #include "Complex.h"
-#include "../Errors/ZeroDivision.cpp"
+#include "../Errors/ZeroDivision.h"
 
 
 const double EPS = 1e-9;
