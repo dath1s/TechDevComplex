@@ -8,26 +8,13 @@ private:
     double real;
     double imaginary;
 public:
-    Complex(double _real, double _imaginary) {
-        real = _real;
-        imaginary = _imaginary;
-    }
+    Complex(double r = 0.0, double i = 0.0): real(r), imaginary(i) {}
 
-    explicit Complex(double _real) {
-        real = _real;
-        imaginary = 0;
-    }
-
-    Complex() {
-        real = 0;
-        imaginary = 0;
-    }
-
-    [[maybe_unused]] void setReal(double _real) {
+    void setReal(double _real) {
         this->real = _real;
     }
 
-    [[maybe_unused]] void setImg(double _imaginary) {
+    void setImg(double _imaginary) {
         this->imaginary = _imaginary;
     }
 

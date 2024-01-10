@@ -3,23 +3,10 @@
 #include "sstream"
 
 #include "Complex.h"
+#include "../Errors/ZeroDivision.cpp"
 
 
-double EPS = 1e-9;
-
-
-class ZeroDivisionError : public std::exception {
-public:
-    explicit ZeroDivisionError(std::string message) : message{std::move(message)} {}
-
-    [[nodiscard]] const char *what() const noexcept override {
-        return message.c_str();
-    }
-
-private:
-    std::string message{};
-};
-
+const double EPS = 1e-9;
 
 bool Eq(double num1, double num2) {
     return std::abs(num1 - num2) < EPS;

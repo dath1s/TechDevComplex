@@ -3,7 +3,7 @@ project(TechDevComplex)
 
 set(CMAKE_CXX_STANDARD 20)
 
-set(SOURCE_FILES main.cpp Google_tests/ComplexTest.cpp)
+set(SOURCE_FILES main.cpp Google_tests/ComplexTest.cpp Errors/ZeroDivision.cpp)
 add_executable(Complex_run ${SOURCE_FILES})
 
 include_directories(Complex_lib)
